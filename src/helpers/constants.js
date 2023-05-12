@@ -915,11 +915,50 @@ export const obstaclePatternTrial = [
   },
   {
     onDistance: 14,
+    obstableDrop: [
+      {
+        lane: 'left',
+        speed: 8
+      },
+      {
+        lane: 'right',
+        speed: 7
+      }
+    ]
+  },
+  {
+    onDistance: 15,
+    obstableDrop: [
+      {
+        lane: 'middle',
+        speed: 8
+      },
+      {
+        lane: 'right',
+        speed: 7
+      }
+    ]
+  },
+  {
+    onDistance: 17,
+    obstableDrop: [
+      {
+        lane: 'left',
+        speed: 6
+      },
+      {
+        lane: 'middle',
+        speed: 7
+      }
+    ]
+  },
+  {
+    onDistance: 19,
     obstableDrop: [],
     adminMessage: 'Trial Finished!',
   },
   {
-    onDistance: 15,
+    onDistance: 20,
     obstableDrop: [],
     adminMessage: '',
     finished: true
