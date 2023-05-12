@@ -49,7 +49,7 @@ const Track = ({ socket, room }) => {
   }, [socket]);
 
   useEffect(() => {
-    if(isClickedLeft && !isGameOver && !isFinished){
+    if(isClickedLeft && !isGameOver){
       switch(carPosition){
         case 'right':
           setCarPosition('middle');
@@ -66,7 +66,7 @@ const Track = ({ socket, room }) => {
   }, [isClickedLeft]);
 
   useEffect(() => {
-    if(isClickedRight && !isGameOver && !isFinished){
+    if(isClickedRight && !isGameOver){
       switch(carPosition){
         case 'left':
           setCarPosition('middle');
@@ -275,7 +275,7 @@ const Track = ({ socket, room }) => {
   }
 
   const handleMobileButton = (isClicked) => {
-    if(isClicked == 'right' && !isGameOver && !isFinished){
+    if(isClicked == 'right' && !isGameOver){
       switch(carPosition){
         case 'left':
           setCarPosition('middle');
@@ -289,7 +289,7 @@ const Track = ({ socket, room }) => {
           break;
       }
     }
-    if(isClicked == 'left' && !isGameOver && !isFinished){
+    if(isClicked == 'left' && !isGameOver){
       switch(carPosition){
         case 'right':
           setCarPosition('middle');
