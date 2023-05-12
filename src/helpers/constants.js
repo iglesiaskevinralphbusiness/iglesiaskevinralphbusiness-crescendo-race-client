@@ -956,11 +956,11 @@ export const obstaclePatternTrial = [
     onDistance: 19,
     obstableDrop: [],
     adminMessage: 'Trial Finished!',
-    finished: true
   },
   {
     onDistance: 20,
     obstableDrop: [],
     adminMessage: '',
+    finished: true
   },
 ]
